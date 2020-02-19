@@ -1,41 +1,68 @@
-def konversiMenit(x)
-    puts "=====KonversiMenit======"
-    awal = x / 60
-    akhir = x % 60
-    if akhir < 10 
-        puts "#{awal}:0#{akhir}"
-    else
-        puts "#{awal}:#{akhir}"
-    end
-end
-
-konversiMenit(63)
-konversiMenit(124)
-konversiMenit(53)
-konversiMenit(88)
-konversiMenit(120)
-
-def bandingkanAngka(a, b)
-    hasil = a < b
-    hasil = -1 if a == b
-    puts hasil
-end
-
-bandingkanAngka(5, 8)
-bandingkanAngka(5, 3)
-bandingkanAngka(4, 4)
-bandingkanAngka(3, 3)
-bandingkanAngka(17, 2)
-
-
-kata = ["umrah", "ruham", "mahur"].sample
-puts "Kata yang benar adalah ? #{kata}"
+kata = ['buuk', 'kubu', 'kuub'].sample
+puts "selamat datang di game tebak kata"
+puts "Tebak Kata : #{kata}"
+puts "jawab"
 jawab = gets.chomp
-# puts "Masukkan jawaban anda : #{jawab}"
+score = 0
+    if jawab == "buku"
+        score = score + 1
+        puts "Selamat Jawaban Anda Benar! Poin Anda #{score}"
+    else
+        puts "Salah! Poin anda #{score}"
+    end
 
-if jawab == "rumah"
-    puts "Jawaban Anda Benar!"
-else
-    puts "Jawaban Anda Salah!"
-end
+    puts "=========================================="
+
+kata2 = ['riot', 'rtio', 'oitr'].sample
+puts "selamat datang di game tebak kata"
+puts "Tebak Kata : #{kata2}"
+puts "jawab"
+jawab = gets.chomp
+    if jawab == "roti"
+        score = score + 1
+        puts "Selamat Jawaban Anda Benar! Poin Anda #{score}"
+    else
+        puts "Salah! Poin anda #{score}"
+    end
+    puts "=========================================="
+    
+    kata3 = ['otip', 'piot', 'toip'].sample
+    puts "selamat datang di game tebak kata"
+    puts "Tebak Kata : #{kata3}"
+    puts "jawab"
+    jawab = gets.chomp
+        if jawab == "topi"
+            score = score + 1
+            puts "Selamat Jawaban Anda Benar! Poin Anda #{score}"
+        else
+            puts "Salah! Poin anda #{score}"
+        end
+        puts "======================================"
+        kata4 = ['asj', 'saj', 'jsa'].sample
+puts "selamat datang di game tebak kata"
+puts "Tebak Kata : #{kata4}"
+puts "jawab"
+jawab = gets.chomp
+    if jawab == "jas"
+        score = score + 1
+        puts "Selamat Jawaban Anda Benar! Poin Anda #{score}"
+    else
+        puts "Salah! Poin anda #{score}"
+    end
+    puts "=========================================="
+    kata2 = ['uajn', 'jaun', 'juna'].sample
+puts "selamat datang di game tebak kata"
+puts "Tebak Kata : #{kata2}"
+puts "jawab"
+jawab = gets.chomp
+    if jawab == "ujan"
+        score = score + 1
+        puts "Selamat Jawaban Anda Benar! Poin Anda #{score}"
+        puts ""
+        
+    else
+        puts "Salah! Poin anda #{score}"
+    end
+
+    puts "Total Score Anda Adalah #{score}"
 
