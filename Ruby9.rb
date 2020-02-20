@@ -36,7 +36,7 @@ puts array
 
 puts "=================================="
 array = [1,2,3,4,5, true, "jangan gitu tebe ganteng", false]
-array.delete_at(5)
+array.delete_at(6)
 puts array
 
 puts "=================================="
@@ -44,6 +44,7 @@ array = [1,2,3,3,3, true, "jangan gitu tebe ganteng", false]
 array[3] = []
 puts array
 puts array.length
+puts "diatas buat length"
 
 
 array = [60, 70, 80, 90, 75, 70, 55]
